@@ -34,12 +34,12 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
-            @await Component.InvokeAsync("QuoteComponent")
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
+            @await Component.InvokeAsync("QuoteComponent")
             &copy; 2026 - Wba.ViewComponentExample.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
